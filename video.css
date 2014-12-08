@@ -1,0 +1,28 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("(https?:\/\/)(www\\.youtube\\.com\/watch).*") {
+  #masthead-positioner { display:none !important; }
+  #masthead-positioner-height-offset { display:none !important; }
+  #footer-container { display:none !important; }
+  #content { display:none !important; }
+  .watch-medium .player-width {width: 756px !important; }
+  .player-width { width: 756px !imporant; }
+  .watch-medium .player-height { height: 425px !important; }
+  #body-container { padding-bottom: 0px !important; }
+  #player { margin-top:0px !important; margin-bottom:0px !important; }
+  .watch.watch-non-stage-mode #player.content-alignment {
+    min-width: 756px !important;
+    max-width: 756px !important;
+  }
+  .video-stream .html5-main-video {
+    width: 740px !important;
+    height: 480px !important;
+    left: 5px;
+    top: -28px;
+  }
+  
+  /* new */
+  #body-container { background-color: #1b1b1b; }
+  #page-container { padding-top: 30px; }
+  #player-api { margin-left:60px; }
+}
